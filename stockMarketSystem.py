@@ -219,6 +219,3 @@ def getPortfolioStatus(portfolioSubject, userEmail):
                            amountOfInvetement=allAmountOfInvestement,
                            assetStatus=assetsStatus)
 
-if __name__ == '__main__':
-    app.secret_key = 'some secret key'
-    app.run('127.0.0.1', 5000)

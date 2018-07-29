@@ -8,8 +8,7 @@ from Logic.Logic import logic
 from Models.Model import Base, Asset, User, UserAssets
 
 project_dir = os.path.dirname(os.path.abspath(__file__))
-database_file = 'sqlite:///{}'.format(os.path.join(project_dir,
-                                                   'stockMarketDB.db'))
+database_file = 'sqlite:///stockMarketDB.db'
 
 port = int(os.environ.get('PORT', 5000))
 app = Flask(__name__)
@@ -25,6 +24,7 @@ session = DBSession()
 # and put the new data
 # 2)The second time you run the system you should comment the
 # setup function so you won't loose yor data
+
 
 @app.before_first_request
 # def setup():
@@ -221,3 +221,5 @@ def getPortfolioStatus(portfolioSubject, userEmail):
                            assetStatus=assetsStatus)
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=port)
+    # app.secret_key = 'some secret key'
+    # app.run('127.0.0.1', 5000)

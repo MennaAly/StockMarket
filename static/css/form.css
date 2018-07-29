@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+
+}
+body{
+background-color: #DCDCDC;
+}
+.error{
+   margin-left: 400px;
+}
+input[type=text], select, textarea {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-left: 300px;
+    border-radius: 4px;
+    resize: vertical;
+}
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #C0C0C0;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 700px;
+    margin-top: 6px;
+}
+
+input[type=submit]:hover {
+    background-color: #C0C0C0;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #DCDCDC;
+    padding: 20px;
+}
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 200px;
+}
+.col {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+   
+}
+
+.table{
+    float: left;
+    border-radius: 4px #C0C0C0;
+    margin-left: 50px;
+}
+
+.tablerow{
+    font-size: 20px;
+    color: black;
+    background-color: #C0C0C0;
+ }
+
+ a:link, a:visited {
+    width:100px;
+    background-color: #C0C0C0;
+    color: black;
+    padding: 14px 25px;
+    padding-right: 50px;
+    margin-bottom: 5px;
+    margin-left:470px;
+    border: none ;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+a:hover, a:active {
+    background-color: #C0C0C0;
+}

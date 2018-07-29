@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>view Asset</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/form.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/asset.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <form method="POST" action="/viewasset">
+            <div class="row">
+
+                <div class="col-75" class="firstchild">
+                    <input type="text" name="name" placeholder="Asset name..">
+                </div>
+            </div>
+
+            <div class="row">
+                <input type="submit" value="view">
+            </div>
+        </form>
+    </div>
+    <div>
+        {% if message %}
+        <p><strong class="error">Error:</strong> {{ message }}</p>
+        {% endif %}
+    </div>
+    {% if asset%}
+    <div class="containerasset">
+        <p id="resize">Name: {{asset.name}} Price: {{asset.closingPrice}}</p>
+    </div>
+    {% endif %}
+</body>
+
+</html>

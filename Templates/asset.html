@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Asset</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/asset.css') }}">
+</head>
+
+<body>
+
+    <div class="containerasset">
+        <p>Name: {{asset.name}}</p>
+        <p>Closing price: {{asset.closingPrice}}</p>
+    </div>
+</body>
+
+</html>

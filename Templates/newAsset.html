@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add new asset</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/form.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+        <form method="POST" action="/assets/add">
+            <div class="row">
+                <div class="col-75" class="firstchild">
+                    <input type="text" name="name" placeholder="Asset name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <input type="text" name="closingPrice" placeholder="Closing price..">
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <div>
+        {% if message %}
+        <p><strong class="error">Error:</strong> {{ message }}</p>
+        {% endif %}
+    </div>
+</body>
+
+</html>

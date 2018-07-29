@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portflio Status</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/asset.css') }}">
+</head>
+
+<body>
+    <table border="1" class="table">
+        <tr>
+            <th class="rowasset">Asset Name</th>
+            <th class="rowasset">Amount Of Investemnt</th>
+            <th class="rowasset">Status</th>
+        </tr>
+        {% for asset in assets %}
+        <tr>
+            <td class="rowasset">{{assets[loop.index-1]}}</td>
+            <td class="rowasset">{{amountOfInvetement[loop.index-1]}}</td>
+            <td class="rowasset">{{assetStatus[loop.index-1]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>

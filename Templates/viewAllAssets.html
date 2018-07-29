@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>view Assets</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/asset.css') }}">
+</head>
+
+<body>
+    <table border="1" class="table">
+        <tr>
+            <th class="rowasset">Asset Name</th>
+            <th class="rowasset">Closing Price</th>
+        </tr>
+        {% for asset in assets %}
+        <tr>
+            <td class="rowasset">{{asset.name}}</td>
+            <td class="rowasset">{{asset.closingPrice}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>

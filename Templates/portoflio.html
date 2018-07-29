@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portoflio</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/formwithcheckbox.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+        <form method="POST" action="/userPortoflio">
+            <div class="col-75">
+                <input type="text" name="email" placeholder="Email..">
+            </div>
+
+            <div class="col">
+                <input type="text" name="subject" placeholder="Subject..">
+            </div>
+            {%for asset in assets %}
+            <div class="checkboxcontainer">
+                <div class="checkboxcol">
+                    <input type="checkbox" name="assets" value={{asset.name}}> {{asset.name}}
+                    <div class="amountofinvestementcol">
+                        <input type="text" name="amountofinvestement{{loop.index}}" placeholder="Amount of investement..">
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+    <div>
+        {% if message %}
+        <p class=error><strong>Error:</strong> {{ message }} {% endif %}
+        </p>
+    </div>
+</body>
+
+</html>

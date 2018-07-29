@@ -16,14 +16,44 @@ body{
 .resize{
 	font-size:18px;
 }
-
+.position{
+float:right;
+width:80px;
+    background-color: #C0C0C0;
+    color: black;
+    padding: 10px 10px;
+    padding-right: 10px;
+    margin-bottom: 5px;
+    margin-left:470px;
+    border: none ;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #C0C0C0;
+    margin-top:-190px;
+}
+.theposition{
+float:right;
+width:80px;
+    background-color: #C0C0C0;
+    color: black;
+    padding: 10px 10px;
+    padding-right: 10px;
+    margin-bottom: 5px;
+    margin-left:470px;
+    border: none ;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #C0C0C0;
+}
 .table{
-	
 	border-radius: 4px #C0C0C0;
 	text-align: center;
 	margin-left: 500px;
 	margin-top: 200px;
-
 }
  .rowasset{
  	font-size: 20px;

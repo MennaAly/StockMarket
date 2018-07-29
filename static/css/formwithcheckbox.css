@@ -8,6 +8,20 @@ background-color: #DCDCDC;
 .error{
    margin-left: 400px;
 }
+.position{
+width:80px;
+    background-color: #C0C0C0;
+    color: black;
+    padding: 10px 10px;
+    padding-right: 10px;
+    border: none ;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #C0C0C0;
+    margin-top:-190px;
+}
 input[type=text], select, textarea {
     width: 50%;
     padding: 12px;

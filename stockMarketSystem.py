@@ -26,16 +26,16 @@ session = DBSession()
 # setup function so you won't loose yor data
 
 @app.before_first_request
-def setup():
-    # Recreate database each time for demo
-
-    Base.metadata.drop_all(bind=db.engine)
-    Base.metadata.create_all(bind=db.engine)
-
-    # -------adding user in the database by inserting the Email---------
-
-    db.session.add(User('Email'))
-    db.session.commit()
+# def setup():
+#     # Recreate database each time for demo
+#
+#     Base.metadata.drop_all(bind=db.engine)
+#     Base.metadata.create_all(bind=db.engine)
+#
+#     # -------adding user in the database by inserting the Email---------
+#
+#     db.session.add(User('Email'))
+#     db.session.commit()
 
 
 @app.route('/', methods=['GET'])
@@ -218,4 +218,6 @@ def getPortfolioStatus(portfolioSubject, userEmail):
     return render_template('portflioStatus.html', assets=allAssets,
                            amountOfInvetement=allAmountOfInvestement,
                            assetStatus=assetsStatus)
-
+if __name__ == '__main__':
+    app.secret_key = 'some secret key'
+    app.run('127.0.0.1', 5000)

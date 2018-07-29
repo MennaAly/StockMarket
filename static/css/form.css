@@ -8,6 +8,10 @@ background-color: #DCDCDC;
 .error{
    margin-left: 400px;
 }
+.thepositionform{
+float:right;
+margin-left:470px;
+}
 input[type=text], select, textarea {
     width: 50%;
     padding: 12px;
@@ -52,12 +56,12 @@ input[type=submit]:hover {
     margin-top: 6px;
    
 }
-
 .table{
     float: left;
     border-radius: 4px #C0C0C0;
-    margin-left: 50px;
+    margin-left: 320px;
 }
+
 
 .tablerow{
     font-size: 20px;
@@ -65,14 +69,13 @@ input[type=submit]:hover {
     background-color: #C0C0C0;
  }
 
+
  a:link, a:visited {
     width:100px;
     background-color: #C0C0C0;
     color: black;
     padding: 14px 25px;
     padding-right: 50px;
-    margin-bottom: 5px;
-    margin-left:470px;
     border: none ;
     border-radius: 5px;
     text-align: center;
@@ -84,3 +87,4 @@ input[type=submit]:hover {
 a:hover, a:active {
     background-color: #C0C0C0;
 }
+

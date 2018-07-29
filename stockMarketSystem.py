@@ -220,5 +220,4 @@ def getPortfolioStatus(portfolioSubject, userEmail):
                            amountOfInvetement=allAmountOfInvestement,
                            assetStatus=assetsStatus)
 if __name__ == '__main__':
-    app.secret_key = 'some secret key'
     app.run(host='0.0.0.0', port=port)
